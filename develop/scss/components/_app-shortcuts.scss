@@ -1,5 +1,6 @@
 aside.app-shortcuts {
   @extend .centered;
+  flex-shrink: 0;
   height: $top-height;
   margin: 0 1rem;
 

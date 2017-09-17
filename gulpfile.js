@@ -96,13 +96,13 @@ gulp.task('html', function() {
 });
 
 // assets
-gulp.task('public', function() {
-  return gulp.src('public/**/*')
-    .pipe(gulp.dest('build/public'))
+gulp.task('assets', function() {
+  return gulp.src('assets/**/*')
+    .pipe(gulp.dest('build/assets'))
 });
 
 // default task
 gulp.task('default', ['serve']);
 
 // build task
-gulp.task('build', ['css', 'js', 'html', 'public']);
+gulp.task('build', ['css', 'js', 'html', 'assets']);

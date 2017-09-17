@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('./../../public/icon/icomoon.eot?pj6wt8');
-  src:  url('./../../public/icon/icomoon.eot?pj6wt8#iefix') format('embedded-opentype'),
-    url('./../../public/icon/icomoon.ttf?pj6wt8') format('truetype'),
-    url('./../../public/icon/icomoon.woff?pj6wt8') format('woff'),
-    url('./../../public/icon/icomoon.svg?pj6wt8#icomoon') format('svg');
+  font-family: 'attitude';
+  src:  url('./../../assets/icon/attitude.eot?pj6wt8');
+  src:  url('./../../assets/icon/attitude.eot?pj6wt8#iefix') format('embedded-opentype'),
+    url('./../../assets/icon/attitude.ttf?pj6wt8') format('truetype'),
+    url('./../../assets/icon/attitude.woff?pj6wt8') format('woff'),
+    url('./../../assets/icon/attitude.svg?pj6wt8#attitude') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -36,7 +36,7 @@ $icon-map: "\e902";
   @include icon-content($content);
 
   &::before {
-    font-family: 'icomoon' !important;
+    font-family: 'attitude' !important;
     speak: none;
     font-style: normal;
     font-weight: normal;

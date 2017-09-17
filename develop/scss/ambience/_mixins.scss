@@ -1,11 +1,3 @@
-@mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
 @mixin  box-sizing($type: border-box) {
   box-sizing: $type;
 }
@@ -47,12 +39,6 @@
   transform: translate(-50%, -50%);
 }
 
-@mixin centered {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 @mixin for-tablet-portrait-up {
   @media (min-width: 37.500em) { // 600px
     @content;
@@ -72,4 +58,28 @@
   @media (min-width: 112.500em) { //1800px
     @content;
   }
+}
+@mixin btn($bg: $color-herbalife, $color: #fff, $border: transparent, $font: $font-size-default) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  line-height: calc(2rem - 2px);
+  background-color: $bg;
+  color: $color;
+  border-style: none;
+  border: 1px solid $border;
+  border-radius: .3rem;
+  font-size: $font;
+  text-align: center;
+  text-decoration: none;
+  padding: .3rem 1rem;
+  user-select: none;
+  outline: none;
+  box-shadow: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+@mixin box-sizing($type: border-box) {
+  box-sizing: $type;
 }

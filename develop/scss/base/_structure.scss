@@ -11,5 +11,14 @@ body {
     height: 100%;
     overflow: hidden;
     position: relative;
+
+    > .content {
+      @include box-sizing;
+      display: flex;
+      flex-flow: nowrap column;
+      height: calc(100% - #{$top-height});
+      padding-top: 1rem;
+      overflow-y: auto;
+    }
   }
 }

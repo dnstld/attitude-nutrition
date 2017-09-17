@@ -11,3 +11,10 @@
   align-items: center;
   justify-content: center;
 }
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

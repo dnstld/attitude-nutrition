@@ -23,7 +23,6 @@ var Attitude = {
       lazyLoad: 'ondemand',
       slidesToShow: 1,
       infinite: true,
-      autoplay: true,
       mobileFirst: true,
       centerMode: true,
       centerPadding: '2rem',
@@ -34,7 +33,8 @@ var Attitude = {
           settings: {
             centerMode: false,
             fade: true,
-            cssEase: 'linear'
+            cssEase: 'linear',
+            autoplay: true
           }
         }
       ]
